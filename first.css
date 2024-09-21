@@ -1,0 +1,211 @@
+* {
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+}
+
+div.main {
+    height: 100vh;
+    width: 100%;
+    background-position: 31% 100%;
+    position: relative;
+    background-image: url('./image/EG-ar-20231023-popsignuptwoweeks-perspective_alpha_website_medium.jpg')
+}
+
+div.main::after {
+    /* z-index: 1; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 93%),
+            rgba(0, 0, 0, 65%),
+            rgba(0, 0, 0, 94%));
+}
+
+
+div.first {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    /* width: 100%;
+    height: 19vh;
+    display: flex;
+    align-items: center; */
+}
+
+div.top {
+    /* z-index: 1; */
+    width: 100%;
+    height: 19vh;
+    display: flex;
+    align-items: center;
+}
+
+
+
+div.left {
+
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0em 0em 0em 2em;
+}
+
+div.right {
+
+    height: 100%;
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 4em;
+    margin: 0 4em 0 0;
+
+}
+
+div.right select {
+    padding: 1em 2.4em;
+    background: transparent;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 16px;
+}
+
+div.right button {
+    padding: 9px 13px;
+    background: red;
+    border-radius: 11px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+div.text {
+
+    height: 41%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.2em;
+}
+
+
+div.text h1 {
+    width: 100%;
+    color: white;
+    flex-basis: 19%;
+    font-weight: bold;
+    font-size: 59px;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    color: white;
+    font-size: 2.4em;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form input {
+    padding: 1em 4em;
+    background: transparent;
+    font-size: 18px;
+    color: white;
+    border-radius: 27px;
+}
+
+form button {
+    padding: 1.4em 2.7em;
+    font-size: 16px;
+    border-radius: 17px;
+    background: red;
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (min-width:755px) and (max-width:994px) {
+
+    img {
+        width: 40%;
+    }
+
+    div.text h1 {
+        font-size: 2.5em;
+    }
+
+    h4 {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width:754px) {
+
+    div.right {
+        gap: 1em;
+
+    }
+
+    div.right button {
+        padding: 9px 13px;
+        background: red;
+        border-radius: 11px;
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    div.right select {
+        padding: 1em 2.4em;
+        background: transparent;
+        color: white;
+        font-size: 1em;
+        font-weight: 500;
+        border-radius: 16px;
+    }
+
+    h4 {
+
+        font-size: 1.4em;
+        width: 79%;
+    }
+
+    h3 {
+        font-size: 2em;
+        width: 77%;
+    }
+
+    div.text h1 {
+        font-size: 2em;
+        width: 75%;
+    }
+
+    img {
+        width: 50%;
+    }
+}
